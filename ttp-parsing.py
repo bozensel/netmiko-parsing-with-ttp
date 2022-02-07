@@ -6,7 +6,7 @@ asr9k = {
     "device_type" : "cisco_xr",
  }
 
-con = ConnectHandler(**ciscoasr9k)
+con = ConnectHandler(**asr9k)
 con.enable()
 
 data_to_parse = con.send_command_timing('show interface description')
